@@ -29,7 +29,7 @@ if ids_len is None:
 ids = r.lrange('ids', 0, int(r.get('ids_len'))-1)
 
 app = Sanic(__name__)
-CORS(app)
+CORS(app, automatic_options=True)
 
 app.static('/static', './fe/dist/static')
 
