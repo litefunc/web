@@ -1,0 +1,3 @@
+[submodule "fe/antd"]
+	path = fe/antd
+	url = git@github.com:litefunc/antd.git
